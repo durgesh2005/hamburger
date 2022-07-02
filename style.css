@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+.letter-space {
+    letter-spacing: 3px;
+}
+nav {
+    float: left;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    padding: 0px 20px;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    padding: 10px;
+    display: flex;
+}
+nav ul a {
+    padding:0px;
+    margin:0px;
+}
+nav li {
+    list-style-type: none;
+    padding:10px 20px;
+}
+
+nav a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav a:hover , li:hover {
+    background-color: rgb(207, 205, 205);
+    cursor: pointer;
+}
+
+.head-image {
+    height: 800px;
+    position: relative;
+    width: 100%;
+}
+.head-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.head-image p {
+    position: absolute;
+    bottom: 50px;
+     left: 50px;
+     font-size: 50px;
+     color: rgb(185, 101, 140);
+}
+
+.catering {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+}
+
+.catering img {
+    opacity: 0.7;
+    border-radius:8px;
+    width: 50%;
+}
+
+.catering-content {
+    padding: 20px 50px;
+    text-align: center;
+    width: 50%;
+}
+
+.catering-content h2 {
+    font-size: 45px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.catering-content h5 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.catering-content p {
+    letter-spacing: 0px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 22px;
+    text-align: justify;
+    font-weight: 100;
+}
+
+.gray {
+    color: gray;
+}
+
+.hr {
+    width: 80%;
+    margin: 0 auto;
+    height: 2px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    background-color: rgb(208, 205, 205);
+}
+
+.menu {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu-content {
+    padding: 20px 50px;
+    text-align: center;
+    text-align: left;
+    width: 50%;
+}
+
+.menu-content h2 {
+    font-size: 45px;
+    font-weight: 300;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.menu-content h5 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.menu-content p {
+    letter-spacing: 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: 17px;
+    text-align: justify;
+    color: gray;
+    font-weight: 100;
+}
+
+.menu img {
+    opacity: 0.7;
+    border-radius:8px;
+    width: 50%;
+}
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 40px;
+    padding-bottom: 60px;
+    font-weight: 300;
+}
+
+.contact p {
+    letter-spacing: 0px;
+    font-size: 17px;
+}
+
+.blue {
+    color: #3b5997;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+.contact form {
+    margin-top: 50px;
+}
+
+.contact input {
+    width: 100%;
+    padding: 20px;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+}
+
+.contact button {
+    margin-top: 40px;
+    padding: 18px;
+    border: none;
+}
+
+footer {
+    margin-top: 80px;
+    width: 100%;
+    background-color: rgb(198, 196, 196);
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width:400px) {
+ 
+    
+nav {
+    text-align: center;
+}
+
+nav ul {
+    display: none;
+}
+
+
+.head-image {
+    height: 350px;
+    position: relative;
+    width: 100%;
+}
+
+.head-image p {
+    display: none;
+}
+
+.catering {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+.catering img {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.catering-content {
+    width: 100%;
+}
+
+
+.menu {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+.menu img {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.menu-content {
+    width: 100%;
+}
+
+.hr {
+    margin-top: 40px;
+}
+
+
+.contact {
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+
+.contact input {
+    text-align: center;
+}
+}
